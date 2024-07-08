@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --main-bg:#FFF8F3;
+  --bg-white:#FFFFFF;
+  --orange-color:#fd6e0a;
+  --black-color:black;
+  --padding: 0 100px;
+}
+
+body{
+  height: 100vh;
+  width: 1260px;
+}
+
+header{
+  height: 78px;
+  width: 100%;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:var(--padding);
+  padding: 20px 100px;
+  cursor: pointer;
+  
+}
+
+nav h2{
+  font-size: 2rem;
+  font-weight: 700;
+  transition: .3s  ease-in-out;
+}
+
+nav h2:hover{
+  transform: scale(1.2);
+}
+nav h2 span{
+  color: var(--orange-color);
+  font-size: 2.2rem;
+}
+nav ul{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  align-items: center;
+  
+}
+
+li a{
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: black;
+  font-weight: 500;
+}
+
+button{
+  padding: 8px 25px;
+  background-color:var(--orange-color);
+  border-radius: 7px;
+  border: none;
+  font-size: 1.1rem;
+  transition: .4s ease-in-out;
+}
+
+button:hover{
+  color: var(--bg-white);
+}
+
+.banner{
+  height: calc(100vh - 80px);
+  width: 100%;
+  background-image: url(/images/header_bg.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 700px 400px ;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.content{
+  width: 55%;
+  margin: 70px 70px 0px 100px;
+}
+
+.content h4{
+  font-size: 1.7rem;
+}
+
+.content h1{
+  font-size: 3rem;
+  padding: 15px 0;
+}
+
+.content .lorem{
+  font-size: .9rem;
+  padding-bottom: 20px;
+}
+
+.btn-box{
+  display: flex;
+  gap: 20px;
+}
+
+.btn-box button i{
+  padding-right: 5px;
+}
+
+
+
+.about{
+  min-height: 400px;
+  margin: 80px 150px;
+  padding: 80px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFDEC6;
+}
+
+.about h2{
+  font-size: 1.6em;
+  padding: 5px 10px 15px;
+  letter-spacing: 1px;
+}
+
+.about p{
+  font-size: 1rem;
+  line-height: 1.3em;
+  letter-spacing: .5px;
+}
+
+.details-box{
+  display: flex;
+  padding: 30px 0;
+  gap: 30px;
+}
+
+.details-box .d-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill{
+  margin: 60px 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skill h2{
+  margin: 20px;
+}
+
+.skill p{
+  text-align: center;
+
+  padding-bottom: 20px;
+}
+
+.skil-item{
+  display: flex;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.skil-item .item{
+  width: 200px;
+  background-color:#FFF0F3;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+.item img{
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.item h4{
+  padding: 15px 0;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 150px;
+  padding-bottom: 50px;
+
+}
+
+.portfolio h3{
+font-size: 1.8rem;
+padding: 20px 0;
+}
+
+.port-content{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.port-edu h2 , .port-exe h2{
+  font-size: 1.5rem;
+  padding: 15px 0;
+}
+
+.edu-item, .exe-item {
+padding: 10px 0;
+}
+.edu-item h1 , .exe-item h1{
+padding: 5px 0;
+}
+
+.edu-item h6 , .exe-item h6 {
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+
+.edu-item p , .exe-item p{
+  font-size: .9rem ;
+  line-height: 1.4rem;
+  padding-bottom: 10px;
+}
+
+.portfolio button {
+  margin: 30px 0;
+}
+
+.middle{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  justify-content:  center;
+  padding: 0 150px;
+  max-width: 1320px;
+  gap: 20px;
+  border: 2px solid black;
+ 
+}
+
+.connect{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid black;
+}
+.connect h3{
+font-size: 1.5rem;
+padding: 10px 0;
+}
+
+.connect p{
+  padding: 10px 0;
+  width: 300px;
+}
+
+.btn-box{
+padding: 15px 0;
+}
+
+.btn-box i{
+  font-size: 2rem;
+  color: #fd6e0a;
+}
+
+.massage h3{
+  font-size: 1.5rem;
+  padding: 10px 0;
+  
+}
+
+.massage label{
+  display: block;
+}
